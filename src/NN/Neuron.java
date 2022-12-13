@@ -36,7 +36,7 @@ public class Neuron {
 
             }
 
-            return activation(sum);
+            return sum;
         }
 
     }
@@ -54,7 +54,13 @@ public class Neuron {
 
     }
 
-    public void setValue(float value) {
-        this.value = value;
+    public void deltaLearning(float learningRate, float smallDelta) {
+
+        for(int i = 0; i < this.edges.size(); i++) {
+
+            float bigDelta = learningRate * smallDelta * edges.get(i).getNeuron().getOutputValue();
+            edges.get(i).addWeight(bigDelta);
+        }
+
     }
 }

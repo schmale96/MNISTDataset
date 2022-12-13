@@ -18,5 +18,14 @@ public class Edge {
 
     }
 
+    public void addWeight(float delta) {
+
+        this.weight += delta;
+    }
+
+    public Neuron getNeuron() {
+
+        return this.neuron;
+    }
 
 }

@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe67f1b-9908-411a-b30c-001bbdebd3d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NN/Edge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NN/NeuralNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fbe67f1b-9908-411a-b30c-001bbdebd3d7" name="Changes" comment="Build body of NN">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/MNISTLearn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MNISTLearn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NN/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NN/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NN/NeuralNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NN/NeuralNetwork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NN/Neuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NN/Neuron.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +53,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670571741996</updated>
     </task>
+    <task id="LOCAL-00001" summary="Build body of NN">
+      <created>1670918712951</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670918712951</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -67,5 +73,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Build body of NN" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build body of NN" />
   </component>
 </project>

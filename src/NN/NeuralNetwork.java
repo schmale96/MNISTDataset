@@ -46,25 +46,51 @@ public class NeuralNetwork {
 
         int index = 0;
 
-        for (Neuron input : this.inputNeurons) {
+        if (this.hiddenNeurons.size() == 0) {
 
-            for(Neuron hidden : this.hiddenNeurons) {
+            for (Neuron input : this.inputNeurons) {
 
-                hidden.addEdge(weights[index++], input);
+                for(Neuron output : this.outputNeurons) {
+
+                    output.addEdge(weights[index++], input);
+
+                }
+
+            }
+
+        } else {
+
+            for (Neuron input : this.inputNeurons) {
+
+                for(Neuron hidden : this.hiddenNeurons) {
+
+                    hidden.addEdge(weights[index++], input);
+
+                }
+
+            }
+
+
+            for (Neuron hidden : this.hiddenNeurons) {
+
+                for (Neuron output : this.outputNeurons) {
+
+                    output.addEdge(weights[index++], hidden);
+
+                }
 
             }
 
         }
 
+    }
 
-        for (Neuron hidden : this.hiddenNeurons) {
+    public void calculateSmallDelta(float[] shoulds, float learningRate) {
 
-            for (Neuron output : this.outputNeurons) {
+        for (int i = 0; i < shoulds.length; i++) {
 
-                output.addEdge(weights[index++], hidden);
-
-            }
-
+            float smallDelta = shoulds[i] - outputNeurons.get(i).getOutputValue();
+            outputNeurons.get(i).deltaLearning(learningRate, smallDelta);
         }
 
     }
